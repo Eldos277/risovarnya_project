@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Рисоварня — паназиатская кухня</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body id="top">
+  <main class="page">
+    <header class="header">
+      <a href="#top" class="brand" aria-label="Рисоварня">
+        <img class="brand-logo" src="./img/logo.png" alt="Логотип Рисоварня" />
+        <span class="brand-text">
+          <span class="brand-title">Рисоварня</span>
+          <span class="brand-subtitle">Паназиатская кухня</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Главное меню" id="mainNav">
+        <a href="#menu-showcase">Меню</a>
+        <a href="#about">О нас</a>
+        <a href="#events">События</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="#contacts" class="reserve-top">
+        <span class="calendar-icon" aria-hidden="true"><span></span></span>
+        Бронирование стола
+      </a>
+
+      <button class="burger" aria-label="Открыть меню" id="burgerBtn" type="button" aria-controls="mainNav" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <section class="hero">
+      <div class="dish-wrap" aria-hidden="true">
+        <div class="dish-glow"></div>
+        <img class="dish-photo" src="./img/dumplings.jpg" alt="Дамплинги в соусе" />
+      </div>
+
+      <div class="hero-copy">
+        <h1 class="hero-title">Рисоварня</h1>
+        <div class="brush" aria-hidden="true"></div>
+        <p class="lead">
+          Паназиатская кухня на каждый день.<br />
+          Горячие блюда, насыщенные соусы<br />
+          и спокойная атмосфера для ужина.
+        </p>
+
+        <div class="tags" aria-label="Преимущества">
+          <a class="tag" href="#contacts">Бронирование</a>
+          <a class="tag" href="#menu-showcase">Паназиатская кухня</a>
+          <a class="tag" href="#kitchen">Меню по QR-код</a>
+        </div>
+      </div>
+
+      <div class="interior-card" aria-hidden="true">
+        <img src="./img/interior.png" alt="Интерьер ресторана" />
+      </div>
+
+      <section class="menu-strip" id="menu" aria-label="Сегодня в меню">
+        <div class="menu-info">
+          <div class="bowl-icon" aria-hidden="true">
+            <span class="steam one"></span>
+            <span class="steam two"></span>
+            <span class="steam three"></span>
+          </div>
+          <div>
+            <h2>Сегодня в меню</h2>
+            <p>Свежие блюда от нашего шефа<br />на каждый день</p>
+            <a class="menu-link" href="#kitchen">Смотреть меню <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <article class="menu-item">
+          <img class="dish-thumb" src="./img/udon.jpg" alt="Вок с говядиной и брокколи" />
+          <div>
+            <p class="dish-name">Вок с говядиной<br />и брокколи</p>
+            <div class="price">690 ₽</div>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <img class="dish-thumb" src="./img/dumplings.jpg" alt="Дамплинги с креветкой" />
+          <div>
+            <p class="dish-name">Дамплинги<br />с креветкой</p>
+            <div class="price">520 ₽</div>
+          </div>
+        </article>
+
+        <article class="menu-item">
+          <img class="dish-thumb" src="./img/tom-yam.jpg" alt="Тонкацу рамен" />
+          <div>
+            <p class="dish-name">Тонкацу рамен</p>
+            <div class="price">750 ₽</div>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <section class="menu-showcase" id="menu-showcase" aria-label="Блюда ресторана">
+      <div class="showcase-grid">
+        <div class="showcase-cell photo-top">
+          <img src="./img/udon.jpg" alt="Удон с говядиной и брокколи" />
+        </div>
+
+        <div class="showcase-cell burgundy-cell">
+          <p class="dish-caption top">Удон с говядиной<br />и брокколи</p>
+          <span class="kanji right-top">食</span>
+        </div>
+
+        <div class="showcase-cell burgundy-cell">
+          <span class="kanji left-bottom">べ</span>
+          <p class="dish-caption middle">Суп Том Ям</p>
+        </div>
+
+        <div class="showcase-cell photo-bottom">
+          <img src="./img/tom-yam.jpg" alt="Суп Том Ям" />
+          <span class="kanji right-bottom">愛</span>
+        </div>
+      </div>
+
+      <div class="showcase-grid showcase-grid-second">
+        <div class="showcase-cell photo-top">
+          <img src="./img/glass-noodles.jpg" alt="Стеклянная лапша кочудян" />
+        </div>
+
+        <div class="showcase-cell burgundy-cell">
+          <p class="dish-caption top">Стеклянная лапша<br />кочудян</p>
+          <span class="kanji right-top">味</span>
+        </div>
+
+        <div class="showcase-cell burgundy-cell">
+          <span class="kanji left-bottom">香</span>
+          <p class="dish-caption middle">Рис со свининой чар-шу<br />и имбирным соусом</p>
+        </div>
+
+        <div class="showcase-cell photo-bottom">
+          <img src="./img/charsiu-rice.jpg" alt="Рис со свининой чар-шу и имбирным соусом" />
+          <span class="kanji right-bottom">福</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="kitchen-section" id="kitchen">
+      <div class="kitchen-card">
+        <img src="./img/set.jpg" alt="Кухня Рисоварни" />
+        <div class="kitchen-content">
+          <h2 class="kitchen-title">Кухня</h2>
+          <div class="qr-menu-box">
+            <img class="qr-menu-img" src="./img/qr-menu.jpg" alt="QR-код меню Рисоварни" />
+            <span>Сканируйте QR-код, чтобы открыть меню</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">О нас</p>
+          <h2 class="section-title">Паназия<br />на каждый день</h2>
+        </div>
+        <p class="section-text">
+          Рисоварня — место для ужина, встреч и спокойных вечеров. Мы собираем понятные азиатские вкусы, свежие продукты и аккуратную подачу без лишнего пафоса.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Готовим ярко, сытно и честно</h3>
+          <p>
+            В меню — дамплинги, вок, рисовые блюда, супы и закуски. Акцент на насыщенные соусы, свежие продукты и блюда, которые хочется заказывать снова.
+          </p>
+          <p>
+            Лендинг показывает кухню, блюда, интерьер, события и контакты ресторана.
+          </p>
+
+          <div class="about-points">
+            <div class="about-point">
+              <strong>5+</strong>
+              <span>авторских блюд в подборке</span>
+            </div>
+            <div class="about-point">
+              <strong>PDF</strong>
+              <span>отдельное меню кухни</span>
+            </div>
+            <div class="about-point">
+              <strong>12:00</strong>
+              <span>начало работы ресторана</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-photo">
+          <img src="./img/dumplings.jpg" alt="Дамплинги Рисоварни" />
+        </div>
+      </div>
+    </section>
+
+    <section class="interior-section" id="interior-section">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">Интерьер</p>
+          <h2 class="section-title">Тёплая<br />атмосфера</h2>
+        </div>
+        <p class="section-text">
+          Мягкие диваны, тёплый свет, зелень и тёмные фактуры создают спокойную посадку для свиданий, компаний и ужинов после работы.
+        </p>
+      </div>
+
+      <div class="interior-layout">
+        <div class="interior-big">
+          <img src="./img/interior.png" alt="Зал ресторана Рисоварня" />
+          <span class="photo-label">Основной зал</span>
+        </div>
+        <div class="interior-side">
+          <div class="interior-side-card">
+            <img src="./img/set.jpg" alt="Сет от шефа" />
+            <span class="photo-label">Кухня</span>
+          </div>
+          <div class="interior-side-card">
+            <img src="./img/udon.jpg" alt="Удон с говядиной и брокколи" />
+            <span class="photo-label">Авторские блюда</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="events-section" id="events">
+      <div class="section-head">
+        <div>
+          <p class="section-kicker">События</p>
+          <h2 class="section-title">Поводы<br />заглянуть</h2>
+        </div>
+      </div>
+
+      <div class="events-grid">
+        <article class="event-card">
+          <span class="event-num">01</span>
+          <h3>Вечерние ужины</h3>
+          <p>Спокойная посадка, горячие блюда и атмосфера для встреч после рабочего дня.</p>
+        </article>
+        <article class="event-card">
+          <span class="event-num">02</span>
+          <h3>Компании и дни рождения</h3>
+          <p>Можно заранее позвонить и забронировать стол для друзей или семьи.</p>
+        </article>
+        <article class="event-card">
+          <span class="event-num">03</span>
+          <h3>Авторские новинки</h3>
+          <p>Отдельный блок для сезонных блюд, новых позиций и специальных предложений.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contacts-map-section" id="contacts">
+      <div class="contacts-map">
+        <div class="map-frame">
+          <iframe
+            title="Карта: Пенза, Революционная 71/1"
+            src="https://yandex.ru/map-widget/v1/?ll=45.007267%2C53.192846&z=16&pt=45.007267,53.192846,pm2rdm"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="contacts-panel">
+          <h2 class="contacts-address">Пенза,<br />Революционная 71/1</h2>
+
+          <div class="contacts-group">
+            <h3>Понедельник - воскресенье</h3>
+            <p>12:00 до 23:30</p>
+          </div>
+
+          <div class="contacts-group">
+            <h3>Телефон</h3>
+            <a class="contacts-phone" href="tel:+79960806680">+7 (996) 080-66-80</a>
+          </div>
+
+          <div class="contacts-group">
+            <h3>Следите за нами в соцсетях</h3>
+            <a class="social-btn" href="https://vk.ru/risovarnyapenza" target="_blank" rel="noopener" aria-label="ВКонтакте">VK</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <img src="./img/logo.png" alt="Логотип Рисоварня" />
+        Рисоварня
+      </div>
+      <p>Паназиатская кухня · Авторское меню · Контакты: +7 (996) 080-66-80</p>
+    </footer>
+  </main>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
