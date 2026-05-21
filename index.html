@@ -18,7 +18,7 @@
       </a>
 
       <nav class="nav" aria-label="Главное меню" id="mainNav">
-        <a href="#menu-showcase">Меню</a>
+        <a href="#kitchen">Меню</a>
         <a href="#about">О нас</a>
         <a href="#events">События</a>
         <a href="#contacts">Контакты</a>
@@ -53,108 +53,22 @@
 
         <div class="tags" aria-label="Преимущества">
           <a class="tag" href="#contacts">Бронирование</a>
-          <a class="tag" href="#menu-showcase">Паназиатская кухня</a>
-          <a class="tag" href="#kitchen">Меню по QR-код</a>
+          <a class="tag" href="#about">Паназиатская кухня</a>
+          <a class="tag" href="#kitchen">Меню в PDF</a>
         </div>
       </div>
 
       <div class="interior-card" aria-hidden="true">
         <img src="./img/interior.png" alt="Интерьер ресторана" />
       </div>
-
-      <section class="menu-strip" id="menu" aria-label="Сегодня в меню">
-        <div class="menu-info">
-          <div class="bowl-icon" aria-hidden="true">
-            <span class="steam one"></span>
-            <span class="steam two"></span>
-            <span class="steam three"></span>
-          </div>
-          <div>
-            <h2>Сегодня в меню</h2>
-            <p>Свежие блюда от нашего шефа<br />на каждый день</p>
-            <a class="menu-link" href="#kitchen">Смотреть меню <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
-
-        <article class="menu-item">
-          <img class="dish-thumb" src="./img/udon.jpg" alt="Вок с говядиной и брокколи" />
-          <div>
-            <p class="dish-name">Вок с говядиной<br />и брокколи</p>
-            <div class="price">690 ₽</div>
-          </div>
-        </article>
-
-        <article class="menu-item">
-          <img class="dish-thumb" src="./img/dumplings.jpg" alt="Дамплинги с креветкой" />
-          <div>
-            <p class="dish-name">Дамплинги<br />с креветкой</p>
-            <div class="price">520 ₽</div>
-          </div>
-        </article>
-
-        <article class="menu-item">
-          <img class="dish-thumb" src="./img/tom-yam.jpg" alt="Тонкацу рамен" />
-          <div>
-            <p class="dish-name">Тонкацу рамен</p>
-            <div class="price">750 ₽</div>
-          </div>
-        </article>
-      </section>
-    </section>
-
-    <section class="menu-showcase" id="menu-showcase" aria-label="Блюда ресторана">
-      <div class="showcase-grid">
-        <div class="showcase-cell photo-top">
-          <img src="./img/udon.jpg" alt="Удон с говядиной и брокколи" />
-        </div>
-
-        <div class="showcase-cell burgundy-cell">
-          <p class="dish-caption top">Удон с говядиной<br />и брокколи</p>
-          <span class="kanji right-top">食</span>
-        </div>
-
-        <div class="showcase-cell burgundy-cell">
-          <span class="kanji left-bottom">べ</span>
-          <p class="dish-caption middle">Суп Том Ям</p>
-        </div>
-
-        <div class="showcase-cell photo-bottom">
-          <img src="./img/tom-yam.jpg" alt="Суп Том Ям" />
-          <span class="kanji right-bottom">愛</span>
-        </div>
-      </div>
-
-      <div class="showcase-grid showcase-grid-second">
-        <div class="showcase-cell photo-top">
-          <img src="./img/glass-noodles.jpg" alt="Стеклянная лапша кочудян" />
-        </div>
-
-        <div class="showcase-cell burgundy-cell">
-          <p class="dish-caption top">Стеклянная лапша<br />кочудян</p>
-          <span class="kanji right-top">味</span>
-        </div>
-
-        <div class="showcase-cell burgundy-cell">
-          <span class="kanji left-bottom">香</span>
-          <p class="dish-caption middle">Рис со свининой чар-шу<br />и имбирным соусом</p>
-        </div>
-
-        <div class="showcase-cell photo-bottom">
-          <img src="./img/charsiu-rice.jpg" alt="Рис со свининой чар-шу и имбирным соусом" />
-          <span class="kanji right-bottom">福</span>
-        </div>
-      </div>
-    </section>
+</section>
 
     <section class="kitchen-section" id="kitchen">
       <div class="kitchen-card">
         <img src="./img/set.jpg" alt="Кухня Рисоварни" />
         <div class="kitchen-content">
           <h2 class="kitchen-title">Кухня</h2>
-          <div class="qr-menu-box">
-            <img class="qr-menu-img" src="./img/qr-menu.jpg" alt="QR-код меню Рисоварни" />
-            <span>Сканируйте QR-код, чтобы открыть меню</span>
-          </div>
+          <a class="pdf-btn" href="./files/menu.pdf" target="_blank" rel="noopener">открыть pdf</a>
         </div>
       </div>
     </section>
@@ -237,6 +151,9 @@
           <p class="section-kicker">События</p>
           <h2 class="section-title">Поводы<br />заглянуть</h2>
         </div>
+        <p class="section-text">
+          На лендинге можно показать не только меню, но и живые причины прийти: ужины, дни рождения, компании и сезонные позиции.
+        </p>
       </div>
 
       <div class="events-grid">
@@ -279,6 +196,10 @@
           <div class="contacts-group">
             <h3>Телефон</h3>
             <a class="contacts-phone" href="tel:+79960806680">+7 (996) 080-66-80</a>
+          </div>
+
+          <div class="contacts-group contacts-qr-group">
+            <img class="contacts-qr-img" src="./img/qr-menu.jpg" alt="QR-код меню Рисоварни" />
           </div>
 
           <div class="contacts-group">

@@ -1540,3 +1540,169 @@ button {
     justify-self: start;
   }
 }
+
+
+/* FINAL PATCH: fixed booking button and contact QR */
+.reserve-top {
+  position: fixed !important;
+  top: 34px;
+  right: 108px;
+  z-index: 9999;
+  display: inline-flex !important;
+}
+
+.contacts-qr-group {
+  margin-top: 34px;
+}
+
+.contacts-qr-img {
+  width: 156px;
+  height: 156px;
+  object-fit: cover;
+  border-radius: 18px;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, .22);
+}
+
+@media (max-width: 1180px) {
+  .reserve-top {
+    top: 22px;
+    right: 76px;
+    height: 44px;
+    padding: 0 14px;
+    gap: 8px;
+    font-size: 13px;
+    border-width: 1.5px;
+    background: rgba(6, 15, 21, .88);
+    backdrop-filter: blur(12px);
+  }
+
+  .reserve-top .calendar-icon {
+    width: 21px;
+    height: 21px;
+    border-width: 1.5px;
+  }
+
+  .contacts-qr-img {
+    width: 138px;
+    height: 138px;
+  }
+}
+
+@media (max-width: 520px) {
+  .reserve-top {
+    right: 62px;
+    top: 20px;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 0;
+  }
+
+  .reserve-top::after {
+    content: "Бронь";
+    font-size: 13px;
+    font-weight: 800;
+  }
+
+  .reserve-top .calendar-icon {
+    display: none;
+  }
+
+  .contacts-qr-img {
+    width: 124px;
+    height: 124px;
+  }
+}
+
+
+/* FINAL CLEAN PATCH */
+.menu-strip {
+  display: none !important;
+}
+
+.hero {
+  min-height: 660px;
+}
+
+.contacts-qr-group {
+  margin-top: 34px;
+}
+
+.contacts-qr-group h3,
+.contacts-qr-group span {
+  display: none !important;
+}
+
+.reserve-top {
+  position: fixed !important;
+  top: 32px;
+  right: 54px;
+  z-index: 9999;
+  width: auto;
+  min-width: 0;
+  height: 58px;
+  padding: 0 26px;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border: 2px solid var(--gold-light);
+  border-radius: 999px;
+  background: rgba(6, 15, 21, .92);
+  color: var(--gold-light);
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  backdrop-filter: blur(12px);
+}
+
+@media (max-width: 1180px) {
+  .hero {
+    min-height: 0;
+  }
+
+  .reserve-top {
+    top: 86px;
+    right: 18px;
+    height: 48px;
+    padding: 0 18px;
+    font-size: 14px;
+    border-width: 1.5px;
+  }
+
+  .reserve-top .calendar-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 520px) {
+  .reserve-top {
+    top: 78px;
+    right: 14px;
+    height: 44px;
+    padding: 0 16px;
+    font-size: 13px;
+  }
+
+  .reserve-top::after {
+    content: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .reserve-top {
+    position: fixed !important;
+    top: auto !important;
+    right: 14px !important;
+    bottom: 14px !important;
+    left: auto !important;
+    z-index: 9999 !important;
+
+    display: inline-flex !important;
+    height: 56px;
+    padding: 0 18px;
+    font-size: 15px;
+    white-space: nowrap;
+  }
+}
